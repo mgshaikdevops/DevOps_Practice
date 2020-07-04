@@ -6,3 +6,4 @@ PASSWORD=${RANDOM}$(date +%s%N)${SPECCHAR}
 useradd -m ${USER_NAME}
 echo ${PASSWORD} | passwd --stdin ${USER_NAME}
 echo "Sucessfully Created user ${USER_NAME} with password as ${PASSWORD}"
+echo "Script executed"
