@@ -1,5 +1,4 @@
 #!/bin/bash
-set -xe
 read -p "Enter the Username:" USER_NAME
 SPEC='!@#$%^&*()_'
 SPECCHAR=$(echo ${SPEC} | fold -w1 | shuf | head -1)
