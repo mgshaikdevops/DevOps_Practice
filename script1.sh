@@ -10,3 +10,4 @@ echo "Script executed"
 #Gives users in the system
 USERS=$(cat /etc/passwd | cut -d ":" -f 1)
 echo $USERS
+echo $PATH  
