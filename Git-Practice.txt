@@ -1,0 +1,28 @@
+
+Oct2020 Central Repo:	https://github.com/mgshaikdevops/Oct2020.git
+
+===============
+Configuration:
+===============
+git config --global user.name "mgshaikdevops"
+git config --global user.email "mgshaikdevops@gmail.com"
+git config --global push.default "simple"
+
+git clone https://github.com/mgshaikdevops/Oct2020.git  [path to download]
+
+create a file and check status 
+you can also create a directory and add the files inside the directory
+git add [file] or add . [all files to add ]
+git commit -m "first commit" or second ,thirt etc
+
+git log [for all commit id's] 
+git log -1 [for one and latest commit id]  
+git log --oneline [it will show only single line view]
+git log --oneline [for one and latest commit id]
+git log -num
+git show [commit id]
+
+======================================================================================
+PUSH TO THE CENTRAL REPOSITORY ONLY WHEN YOU FINISH with your work in local repository
+======================================================================================
+git push OR origin master
