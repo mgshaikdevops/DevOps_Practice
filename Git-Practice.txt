@@ -8,6 +8,10 @@ git config --global user.name "mgshaikdevops"
 git config --global user.email "mgshaikdevops@gmail.com"
 git config --global push.default "simple"
 
+========================
+User/Developer Workflow
+========================
+
 git clone https://github.com/mgshaikdevops/Oct2020.git  [path to download]
 
 create a file and check status 
@@ -20,9 +24,41 @@ git log -1 [for one and latest commit id]
 git log --oneline [it will show only single line view]
 git log --oneline [for one and latest commit id]
 git log -num
-git show [commit id]
+git show <commit id>
 
 ======================================================================================
 PUSH TO THE CENTRAL REPOSITORY ONLY WHEN YOU FINISH with your work in local repository
 ======================================================================================
 git push OR origin master
+git pull [we have to use pull when we have to update every file from different workspaces]
+
+
+===============================
+BRANCHES switching and Merging 
+===============================
+
+git branch [to check on which branch you are]
+
+git branch <new branch name> [to create a new branch]
+when you create a new branch at that time it will add all the files from the parent branch 
+
+git checkout <branch name> [checkout we use for switching from one branch to another branch]
+[When you create some files in a branch those files will only be in that perticular branch]
+
+git merge <source branch> <destination branch(normally it is master in most cases)>
+[it will merge all the files from that branch]
+
+[always go to destination(master will be destination branch in most cases) branch and from there you run the command]
+[when you are in destination branch just give source branch]
+git merge <source branch>
+
+when you merge it will ask you to write a commit message for your reference then save it in default editor
+
+when you want to merge the same file from the different branches there will be a CONFLIX in that case if it is in 
+-->local repository then it will be a developer most of the time so he must know which one to merge OR if there is some changes then he must do manual merge in the editor and after that file he must commit.
+-->central repository then you must ask for the owner of the repository or who worked with that file.
+
+
+git cherry-pick <commitID> 
+[to merge only single file from that branch]
+
